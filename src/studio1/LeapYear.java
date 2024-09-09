@@ -10,7 +10,7 @@ public class LeapYear {
 		System.out.println("What is the year?");
 		int year = in.nextInt();
 		
-		boolean isLeapYear = (year%4 == 0) && (year%400 != 0) && (year%100 != 0);
+		boolean isLeapYear = (year%4 == 0) && (year%100 != 0) || (year%400 == 0);
 		System.out.println(isLeapYear);
 	}
 
